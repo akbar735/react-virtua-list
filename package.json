@@ -1,0 +1,42 @@
+{
+    "name": "react-virtua-list",
+    "version": "0.1.0",
+    "description": "A lightweight and fast React Virtualization Liberary",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "dev": "tsup src/index.ts --watch",
+        "clean": "rm -rf dist"
+    },
+    "keywords": [
+        "react",
+        "virtualization",
+        "list",
+        "performance",
+        "infinite scroll",
+        "react window",
+        "windowing"
+    ],
+    "author": "Md Ali Akbar",
+    "license": "MIT",
+    "peerDependencies": {
+        "react": ">=18"
+    },
+    "devDependencies": {
+        "@types/react": "^19.2.14",
+        "tsup": "8.5.1",
+        "typescript": "6.0.2"
+    }
+}
