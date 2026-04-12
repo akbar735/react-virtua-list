@@ -9,6 +9,7 @@ export type RenderItemType = (props: {
   isScrolling: boolean;
   isVisible: boolean;
 }) => React.ReactNode;
+
 export type VirtualListRef = {
     scrollToIndex : (index: number, options?: {align?: ScrollAlign, behavior: ScrollBehavior}) => void
 }
@@ -19,13 +20,10 @@ export interface IVirtuaListProps{
     itemHeight: number;
     overscan?: number;
     renderItem: RenderItemType,
-
     className?: string;
     style?: React.CSSProperties;
-
     innerClassName?: string;
     innerStyle?: React.CSSProperties;
-
     itemClassName?: string;
     itemStyle?: React.CSSProperties;
 }

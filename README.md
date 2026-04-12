@@ -6,6 +6,16 @@ Built with performance, simplicity, and developer experience in mind.
 
 ---
 
+## 🤔 Why react-virtua-list?
+
+* 🪶 **Lightweight alternative** to heavy virtualization libraries
+* ⚡ **Simple API** — get started in seconds
+* 🎯 Built for **modern React (hooks-first)**
+* 🧠 Extra optimizations like `isScrolling` and `isVisible`
+* 💯 Focused on **developer experience and performance**
+
+---
+
 ## 🚀 Features
 
 * ⚡ **Blazing fast virtualization**
@@ -16,6 +26,12 @@ Built with performance, simplicity, and developer experience in mind.
 * 🔥 **isScrolling & isVisible optimizations**
 * 📦 **Tiny bundle size**
 * 💯 **TypeScript support out of the box**
+
+---
+
+## 🎬 Demo
+
+Coming soon...
 
 ---
 
@@ -35,8 +51,6 @@ yarn add react-virtua-list
 
 ## 🧑‍💻 Basic Usage
 
-### TypeScript
-
 ```tsx
 import { VirtualList } from "react-virtua-list";
 
@@ -46,25 +60,7 @@ function App() {
       height={500}
       itemCount={10000}
       itemHeight={50}
-      renderItem={({ index, style }) => (
-        <div style={style}>Item {index}</div>
-      )}
-    />
-  );
-}
-```
-
-### JavaScript
-
-```jsx
-import { VirtualList } from "react-virtua-list";
-
-function App() {
-  return (
-    <VirtualList
-      height={500}
-      itemCount={10000}
-      itemHeight={50}
+      overscan={5}
       renderItem={({ index, style }) => (
         <div style={style}>Item {index}</div>
       )}
@@ -137,19 +133,7 @@ function App() {
 
 ### Use `isScrolling` for performance
 
-#### TypeScript
-
 ```tsx
-renderItem={({ index, style, isScrolling }) => (
-  <div style={style}>
-    {isScrolling ? "Loading..." : `Item ${index}`}
-  </div>
-)}
-```
-
-#### JavaScript
-
-```jsx
 renderItem={({ index, style, isScrolling }) => (
   <div style={style}>
     {isScrolling ? "Loading..." : `Item ${index}`}
@@ -161,19 +145,7 @@ renderItem={({ index, style, isScrolling }) => (
 
 ### Use `isVisible` for lazy rendering
 
-#### TypeScript
-
 ```tsx
-renderItem={({ index, style, isVisible }) => (
-  <div style={style}>
-    {isVisible ? <img src={`image-${index}.jpg`} alt="" /> : null}
-  </div>
-)}
-```
-
-#### JavaScript
-
-```jsx
 renderItem={({ index, style, isVisible }) => (
   <div style={style}>
     {isVisible ? <img src={`image-${index}.jpg`} alt="" /> : null}
@@ -187,24 +159,7 @@ renderItem={({ index, style, isVisible }) => (
 
 You can style the list using props:
 
-### TypeScript
-
 ```tsx
-<VirtualList
-  height={500}
-  itemCount={1000}
-  itemHeight={50}
-  className="border rounded"
-  itemClassName="px-4 py-2 hover:bg-gray-100"
-  renderItem={({ index, style }) => (
-    <div style={style}>Item {index}</div>
-  )}
-/>
-```
-
-### JavaScript
-
-```jsx
 <VirtualList
   height={500}
   itemCount={1000}
@@ -243,6 +198,9 @@ You can style the list using props:
   isVisible: boolean;
 }
 ```
+
+> ⚠️ Important: Always apply the provided `style` to your item container.
+> This is required for correct positioning and virtualization to work properly.
 
 ---
 
