@@ -1,4 +1,4 @@
-# ⚡ react-virtua-list
+# ⚡ react-virtual-window
 
 A **lightweight, fast, and modern React virtualization library** for rendering large lists efficiently.
 
@@ -6,7 +6,7 @@ Built with performance, simplicity, and developer experience in mind.
 
 ---
 
-## 🤔 Why react-virtua-list?
+## 🤔 Why react-virtual-window?
 
 * 🪶 **Lightweight alternative** to heavy virtualization libraries
 * ⚡ **Simple API** — get started in seconds
@@ -38,13 +38,13 @@ Coming soon...
 ## 📦 Installation
 
 ```bash
-npm install react-virtua-list
+npm install react-virtual-window
 ```
 
 or
 
 ```bash
-yarn add react-virtua-list
+yarn add react-virtual-window
 ```
 
 ---
@@ -52,7 +52,7 @@ yarn add react-virtua-list
 ## 🧑‍💻 Basic Usage
 
 ```tsx
-import { VirtualList } from "react-virtua-list";
+import { VirtualList } from "react-virtual-window";
 
 function App() {
   return (
@@ -79,7 +79,7 @@ function App() {
 
 ```tsx
 import { useRef } from "react";
-import { VirtualList, VirtualListRef } from "react-virtua-list";
+import { VirtualList, VirtualListRef } from "react-virtual-window";
 
 const listRef = useRef<VirtualListRef>(null);
 
@@ -102,7 +102,7 @@ const listRef = useRef<VirtualListRef>(null);
 
 ```jsx
 import { useRef } from "react";
-import { VirtualList } from "react-virtua-list";
+import { VirtualList } from "react-virtual-window";
 
 function App() {
   const listRef = useRef(null);

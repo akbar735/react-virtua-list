@@ -1,7 +1,7 @@
 {
-    "name": "react-virtua-list",
+    "name": "react-virtual-window",
     "version": "0.1.0",
-    "description": "A lightweight and fast React Virtualization Liberary",
+    "description": "A lightweight and fast React virtualization library",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
@@ -27,8 +27,12 @@
         "performance",
         "infinite scroll",
         "react window",
-        "windowing"
+        "windowing",
+        "virtual-list",
+        "react-window",
+        "react-virtualized"
     ],
+    "sideEffects": false,
     "author": "Md Ali Akbar",
     "license": "MIT",
     "peerDependencies": {
