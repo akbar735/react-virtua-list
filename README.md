@@ -98,6 +98,22 @@ const listRef = useRef<VirtualListRef>(null);
 />
 ```
 
+Pass a pixel offset as the second argument to fine-tune the final position. Positive values scroll further down; negative values leave space above the item.
+
+```tsx
+listRef.current?.scrollToIndex(500, -72);
+```
+
+To combine an offset with alignment or smooth scrolling, use an options object:
+
+```tsx
+listRef.current?.scrollToIndex(500, {
+  align: "start",
+  offset: -72,
+  behavior: "smooth",
+});
+```
+
 #### JavaScript
 
 ```jsx
@@ -207,8 +223,12 @@ You can style the list using props:
 ### Ref API
 
 ```ts
+scrollToIndex(index: number, offset?: number): void;
+
 scrollToIndex(index: number, options?: {
   align?: "start" | "center" | "end";
+  behavior?: "auto" | "smooth" | "instant";
+  offset?: number;
 })
 ```
 

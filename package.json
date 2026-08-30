@@ -1,6 +1,6 @@
 {
     "name": "react-virtual-window",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "A lightweight and fast React virtualization library",
     "main": "dist/index.js",
     "module": "dist/index.mjs",

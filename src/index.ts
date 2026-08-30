@@ -1,4 +1,4 @@
 export { VirtualList } from "./VirtualList";
 export { useVirtualizer } from "./useVirtualizer";
 
-export  type { VirtualListRef, ScrollAlign, ScrollBehavior, IVirtuaListProps, RenderItemType } from "./VirtualList";
+export  type { VirtualListRef, ScrollAlign, ScrollBehavior, ScrollToIndexOptions, IVirtuaListProps, RenderItemType } from "./VirtualList";
