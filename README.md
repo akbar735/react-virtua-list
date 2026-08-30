@@ -29,9 +29,9 @@ Built with performance, simplicity, and developer experience in mind.
 
 ---
 
-## 🎬 Demo
+## 🚀 Live Demo
 
-Coming soon...
+[View Live Demo](https://react-virtual-window-demo.vercel.app/)
 
 ---
 
